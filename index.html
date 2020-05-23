@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="stylesheet" href="main.css">
+    <title>MSI 2020</title>
+</head>
+<body>
+<header class="header">
+    <h3 class="header__logo"><a href="#">MSI 2020</a></h3>
+
+    <div class="favourite">
+        <div class="favourite__toggle-circle">
+            <div class="favourite__toggle-bar">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <span class="favourite__text">Favourite</span>
+    </div>
+</header>
+
+<div class="favour_jokes__wrapper">
+    <div class="favour_jokes__tan"></div>
+    <div class="favour_jokes"></div>
+</div>
+
+<div class="main">
+    <header class="main__header">
+        <h1>Hey!</h1>
+        <h2>Let`s try to find a joke for you:</h2>
+    </header>
+    <form class="search_form" action="">
+        <label data-search data-random class="container">Random
+            <input type="radio" checked="checked" name="joke" value="random">
+            <span class="checkcategory"></span>
+        </label>
+        <label data-search  class="container">From categories
+            <input type="radio" name="joke" value="categories">
+            <span class="checkcategory"></span>
+        </label>
+
+        <div data-panel class="categories"></div>
+
+        <label data-search data-search-label class="container">Search
+            <input type="radio" name="joke" value="search">
+            <span class="checkcategory"></span>
+        </label>
+        <div data-panel class="search_field">
+            <input data-search-input type="text" name="search_field" placeholder="Free text search..." value="" autocomplete="off">
+        </div>
+        <div class="joke_btn__wrapper">
+            <input type="submit" value="Get a joke" class="joke_btn">
+        </div>
+    </form>
+</div>
+<div class="jokes"></div>
+<script src="bundle.js"></script>
+</body>
+</html>

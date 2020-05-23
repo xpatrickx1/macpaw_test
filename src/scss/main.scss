@@ -1,0 +1,14 @@
+@import "header";
+@import "main_content";
+@import "joke";
+@import "autocomplete";
+
+$blackColor: #333333;
+$bottonColor: #7694ff;
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Helvetica;
+}
+
